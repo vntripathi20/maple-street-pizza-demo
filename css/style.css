@@ -6,9 +6,22 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+:root {
+  --forest: #2F7A3E;
+  --forest-dark: #235D2D;
+  --forest-darker: #153823;
+  --forest-muted: #556B2F;
+  --accent: #6AA36A;
+  --text: #333333;
+  --text-on-dark: #ffffff;
+  --muted-bg: #f7f7f7;
+  --muted-bg-light: #f9f9f9;
+  --muted-on-dark: #e6efe6;
+}
+
 /* Navigation */
 .navbar {
-  background-color: #333;
+  background-color: var(--forest-darker);
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
@@ -19,7 +32,7 @@
 }
 
 .nav-logo {
-  color: white;
+  color: var(--text-on-dark);
   font-size: 1.5em;
   font-weight: bold;
   text-decoration: none;
@@ -32,14 +45,14 @@
 }
 
 .nav-menu a {
-  color: white;
+  color: var(--text-on-dark);
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .nav-menu a:hover,
 .nav-menu a.active {
-  color: #2F7A3E;
+  color: var(--forest);
 }
 
 /* Mobile nav toggle */
@@ -47,7 +60,7 @@
   display: none;
   background: transparent;
   border: none;
-  color: white;
+  color: var(--text-on-dark);
   font-size: 1.3rem;
   cursor: pointer;
 }
@@ -57,7 +70,7 @@
   position: absolute;
   top: 60px;
   right: 20px;
-  background: #333;
+  background: var(--forest-darker);
   padding: 15px;
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
@@ -73,34 +86,36 @@
 /* Buttons */
 .btn {
   display: inline-block;
-  background-color: #D62828;
-  color: white;
+  background-color: var(--forest);
+  color: var(--text-on-dark);
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
   margin-top: 10px;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.12s;
 }
 
 .btn:hover {
-  background-color: #235D2D;
+  background-color: var(--forest-dark);
+  transform: translateY(-1px);
 }
 
 .btn-secondary {
-  background-color: #556B2F;
+  background-color: var(--forest-muted);
+  color: var(--text-on-dark);
 }
 
 .btn-secondary:hover {
-  background-color: #3e5a1e;
+  background-color: var(--forest-muted-dark);
 }
 
 /* Hero */
 .hero {
-  background: url('../images/pizza.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(21,56,35,0.45), rgba(21,56,35,0.2)), url('../images/pizza.jpg') no-repeat center center/cover;
   height: 60vh;
-  color: white;
+  color: var(--text-on-dark);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -110,12 +125,11 @@
 
 .hero h1 {
   font-size: 3em;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.35);
 }
 
 .hero p {
   font-size: 1.3em;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
 .hero-inner {
@@ -138,14 +152,14 @@
 
 /* Page Header */
 .page-header {
-  background-color: #f7f7f7;
+  background-color: var(--muted-bg);
   padding: 40px 20px;
   text-align: center;
 }
 
 .page-header h1 {
   font-size: 2.5em;
-  color: #333;
+  color: var(--text);
 }
 
 .page-header p {
@@ -169,22 +183,22 @@ section {
 }
 
 .menu-items .item {
-  background-color: #f7f7f7;
+  background-color: var(--muted-bg);
   padding: 15px;
   border-radius: 8px;
   width: 180px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
 }
 
 /* Home Page */
 .about {
-  background-color: #f9f9f9;
+  background-color: var(--muted-bg-light);
   max-width: 1000px;
   margin: 0 auto;
 }
 
 .about h2 {
-  color: #333;
+  color: var(--text);
   font-size: 2em;
   margin-bottom: 20px;
 }
@@ -212,7 +226,7 @@ section {
 }
 
 .highlight h3 {
-  color: #2F7A3E;
+  color: var(--forest);
   margin-bottom: 12px;
   font-size: 1.3em;
 }
@@ -223,8 +237,8 @@ section {
 }
 
 .cta-section {
-  background-color: #2F7A3E;
-  color: white;
+  background-color: var(--forest);
+  color: var(--text-on-dark);
   padding: 60px 20px;
   text-align: center;
 }
@@ -248,7 +262,7 @@ section {
 
 .cta-section .btn {
   background-color: white;
-  color: #2F7A3E;
+  color: var(--forest);
   font-weight: bold;
   padding: 12px 30px;
 }
@@ -258,12 +272,12 @@ section {
 }
 
 .cta-section .btn-secondary {
-  background-color: #235D2D;
-  color: white;
+  background-color: var(--forest-dark);
+  color: var(--text-on-dark);
 }
 
 .cta-section .btn-secondary:hover {
-  background-color: #184E2C;
+  background-color: var(--forest-darker);
 }
 
 /* Menu Page */
@@ -278,10 +292,10 @@ section {
 }
 
 .menu-category h2 {
-  color: #333;
+  color: var(--text);
   font-size: 1.8em;
   margin-bottom: 30px;
-  border-bottom: 3px solid #2F7A3E;
+  border-bottom: 3px solid var(--forest);
   padding-bottom: 10px;
   display: inline-block;
 }
@@ -294,11 +308,11 @@ section {
 }
 
 .menu-item {
-  background-color: #f9f9f9;
+  background-color: var(--muted-bg-light);
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  border-left: 4px solid #D62828;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border-left: 4px solid var(--accent);
 }
 
 .item-header {
@@ -309,13 +323,13 @@ section {
 }
 
 .menu-item h3 {
-  color: #333;
+  color: var(--text);
   font-size: 1.2em;
   margin: 0;
 }
 
 .price {
-  color: #2F7A3E;
+  color: var(--forest);
   font-weight: bold;
   font-size: 1.3em;
 }
@@ -342,7 +356,7 @@ section {
 
 .contact-info h2,
 .hours h2 {
-  color: #333;
+  color: var(--text);
   margin-bottom: 20px;
   text-align: left;
 }
@@ -354,7 +368,7 @@ section {
 
 .contact-info a,
 .hours a {
-  color: #D62828;
+  color: var(--forest);
   text-decoration: none;
 }
 
@@ -378,7 +392,7 @@ section {
 }
 
 .contact-form-container h2 {
-  color: #333;
+  color: var(--text);
   margin-bottom: 20px;
 }
 
@@ -402,8 +416,8 @@ section {
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #D62828;
-  box-shadow: 0 0 5px rgba(214, 40, 40, 0.3);
+  border-color: var(--forest);
+  box-shadow: 0 0 6px rgba(47, 122, 62, 0.22);
 }
 
 /* Responsive */
@@ -459,20 +473,12 @@ section {
 
 /* Footer improvements */
 footer {
-  background-color: #153823;
-  color: #e6efe6;
+  background-color: var(--forest-darker);
+  color: var(--muted-on-dark);
   padding: 25px 20px;
   text-align: center;
 }
 
 footer p {
   margin: 0;
-}
-
-/* Footer */
-footer {
-  background-color: #333;
-  color: white;
-  padding: 15px;
-  text-align: center;
 }
