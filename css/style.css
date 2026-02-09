@@ -39,7 +39,7 @@
 
 .nav-menu a:hover,
 .nav-menu a.active {
-  color: #D62828;
+  color: #2F7A3E;
 }
 
 /* Mobile nav toggle */
@@ -85,15 +85,15 @@
 }
 
 .btn:hover {
-  background-color: #B71C1C;
+  background-color: #235D2D;
 }
 
 .btn-secondary {
-  background-color: #555;
+  background-color: #556B2F;
 }
 
 .btn-secondary:hover {
-  background-color: #333;
+  background-color: #3e5a1e;
 }
 
 /* Hero */
@@ -212,7 +212,7 @@ section {
 }
 
 .highlight h3 {
-  color: #D62828;
+  color: #2F7A3E;
   margin-bottom: 12px;
   font-size: 1.3em;
 }
@@ -223,7 +223,7 @@ section {
 }
 
 .cta-section {
-  background-color: #D62828;
+  background-color: #2F7A3E;
   color: white;
   padding: 60px 20px;
   text-align: center;
@@ -248,7 +248,7 @@ section {
 
 .cta-section .btn {
   background-color: white;
-  color: #D62828;
+  color: #2F7A3E;
   font-weight: bold;
   padding: 12px 30px;
 }
@@ -258,12 +258,12 @@ section {
 }
 
 .cta-section .btn-secondary {
-  background-color: #B71C1C;
+  background-color: #235D2D;
   color: white;
 }
 
 .cta-section .btn-secondary:hover {
-  background-color: #8B0000;
+  background-color: #184E2C;
 }
 
 /* Menu Page */
@@ -281,7 +281,7 @@ section {
   color: #333;
   font-size: 1.8em;
   margin-bottom: 30px;
-  border-bottom: 3px solid #D62828;
+  border-bottom: 3px solid #2F7A3E;
   padding-bottom: 10px;
   display: inline-block;
 }
@@ -315,7 +315,7 @@ section {
 }
 
 .price {
-  color: #D62828;
+  color: #2F7A3E;
   font-weight: bold;
   font-size: 1.3em;
 }
@@ -459,8 +459,8 @@ section {
 
 /* Footer improvements */
 footer {
-  background-color: #222;
-  color: #ddd;
+  background-color: #153823;
+  color: #e6efe6;
   padding: 25px 20px;
   text-align: center;
 }
