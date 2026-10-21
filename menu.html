@@ -3,147 +3,217 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu - Maple Street Pizza</title>
+  <title>Menu | Maple Street Pizza</title>
+  <meta name="description" content="Wood-fired pizzas, garlic knots, cheesy appetizers and fresh drinks. See the full Maple Street Pizza menu.">
+  <meta name="theme-color" content="#d8381f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-  <!-- Navigation -->
+  <div class="topbar">🔥 Ovens are lit daily from 11am · <a href="tel:5551234567">Call ahead: (555) 123-4567</a></div>
+
   <nav class="navbar">
-    <a href="index.html" class="nav-logo">Maple Street Pizza</a>
-    <ul class="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="menu.html" class="active">Menu</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo"><span class="leaf" aria-hidden="true">🍕</span>Maple Street</a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="tel:5551234567" class="btn">Order Pickup</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-controls="nav-menu" aria-expanded="false"><span></span></button>
+    </div>
   </nav>
 
-  <!-- Page Header -->
   <header class="page-header">
+    <span class="eyebrow">Fresh · Hand-made · Wood-fired</span>
     <h1>Our Menu</h1>
-    <p>Fresh ingredients, authentic flavors</p>
+    <p>Fresh ingredients, authentic flavors, and a crust you'll remember.</p>
     <div class="menu-actions">
-      <button class="btn" data-print="menu">Print Menu</button>
-      <a href="tel:5551234567" class="btn btn-secondary">Call to Order</a>
+      <a href="tel:5551234567" class="btn">Call to Order</a>
+      <button class="btn btn-secondary" data-print="menu">Print Menu</button>
     </div>
   </header>
 
-  <!-- Menu Section -->
-  <section class="menu-page">
-    <div class="menu-category">
-      <h2>Pizzas</h2>
-      <div class="menu-items">
-        <div class="menu-item">
-          <div class="item-header">
-            <h3>Margherita</h3>
-            <span class="price">$12</span>
-          </div>
-          <p>Classic tomato, fresh mozzarella & basil</p>
-        </div>
-        <div class="menu-item">
-          <div class="item-header">
-            <h3>Pepperoni</h3>
-            <span class="price">$13</span>
-          </div>
-          <p>Tomato, mozzarella & premium pepperoni</p>
-        </div>
-        <div class="menu-item">
-          <div class="item-header">
-            <h3>Veggie Supreme</h3>
-            <span class="price">$14</span>
-          </div>
-          <p>Tomato, mozzarella & fresh seasonal vegetables</p>
-        </div>
-        <div class="menu-item">
-          <div class="item-header">
-            <h3>Meat Lovers</h3>
-            <span class="price">$15</span>
-          </div>
-          <p>Pepperoni, sausage, bacon & mozzarella</p>
-        </div>
-        <div class="menu-item">
-          <div class="item-header">
-            <h3>White Pizza</h3>
-            <span class="price">$13</span>
-          </div>
-          <p>Ricotta, mozzarella, garlic & olive oil</p>
-        </div>
-      </div>
+  <div class="menu-tabs-wrap">
+    <div class="menu-tabs" role="navigation" aria-label="Menu categories">
+      <a href="#pizzas" class="active">🍕 Pizzas</a>
+      <a href="#appetizers">🧄 Appetizers</a>
+      <a href="#beverages">🥤 Beverages</a>
     </div>
+  </div>
 
-    <div class="menu-category">
-      <h2>Appetizers</h2>
+  <main class="menu-page">
+    <section class="menu-category" id="pizzas">
+      <div class="category-head reveal"><h2>Pizzas</h2></div>
+      <p class="category-note">Every pie is hand-stretched and wood-fired to order.</p>
       <div class="menu-items">
-        <div class="menu-item">
-          <div class="item-header">
-            <h3>Garlic Knots</h3>
-            <span class="price">$5</span>
+        <article class="menu-item reveal">
+          <div class="item-emoji">🌿</div>
+          <div>
+            <div class="item-header"><h3>Margherita</h3><span class="price">$12</span></div>
+            <p>Classic tomato, fresh mozzarella &amp; basil.</p>
+            <div class="badges"><span class="badge fav">Classic</span><span class="badge veg">Vegetarian</span></div>
           </div>
-          <p>Fresh baked garlic knots with marinara sauce</p>
-        </div>
-        <div class="menu-item">
-          <div class="item-header">
-            <h3>Breadsticks</h3>
-            <span class="price">$6</span>
+        </article>
+        <article class="menu-item reveal">
+          <div class="item-emoji">🍕</div>
+          <div>
+            <div class="item-header"><h3>Pepperoni</h3><span class="price">$13</span></div>
+            <p>Tomato, mozzarella &amp; premium pepperoni.</p>
+            <div class="badges"><span class="badge fav">Most ordered</span></div>
           </div>
-          <p>Crispy breadsticks with garlic butter</p>
-        </div>
-        <div class="menu-item">
-          <div class="item-header">
-            <h3>Mozzarella Sticks</h3>
-            <span class="price">$7</span>
+        </article>
+        <article class="menu-item reveal">
+          <div class="item-emoji">🥦</div>
+          <div>
+            <div class="item-header"><h3>Veggie Supreme</h3><span class="price">$14</span></div>
+            <p>Tomato, mozzarella &amp; fresh seasonal vegetables.</p>
+            <div class="badges"><span class="badge veg">Vegetarian</span></div>
           </div>
-          <p>Golden fried mozzarella with marinara sauce</p>
-        </div>
-        <div class="menu-item">
-          <div class="item-header">
-            <h3>Spinach & Cheese Dip</h3>
-            <span class="price">$8</span>
+        </article>
+        <article class="menu-item reveal">
+          <div class="item-emoji">🥓</div>
+          <div>
+            <div class="item-header"><h3>Meat Lovers</h3><span class="price">$15</span></div>
+            <p>Pepperoni, sausage, bacon &amp; mozzarella.</p>
+            <div class="badges"><span class="badge fav">Hearty</span></div>
           </div>
-          <p>Creamy spinach and cheese with bread</p>
-        </div>
+        </article>
+        <article class="menu-item reveal">
+          <div class="item-emoji">🧅</div>
+          <div>
+            <div class="item-header"><h3>White Pizza</h3><span class="price">$13</span></div>
+            <p>Ricotta, mozzarella, garlic &amp; olive oil. No red sauce.</p>
+            <div class="badges"><span class="badge veg">Vegetarian</span></div>
+          </div>
+        </article>
       </div>
-    </div>
+    </section>
 
-    <div class="menu-category">
-      <h2>Beverages</h2>
+    <section class="menu-category" id="appetizers">
+      <div class="category-head reveal"><h2>Appetizers</h2></div>
+      <p class="category-note">Perfect for the table while the pizza bakes.</p>
       <div class="menu-items">
-        <div class="menu-item">
-          <div class="item-header">
-            <h3>Soda</h3>
-            <span class="price">$2</span>
+        <article class="menu-item reveal">
+          <div class="item-emoji">🧄</div>
+          <div>
+            <div class="item-header"><h3>Garlic Knots</h3><span class="price">$5</span></div>
+            <p>Fresh baked garlic knots with marinara sauce.</p>
+            <div class="badges"><span class="badge fav">Crowd pleaser</span><span class="badge veg">Vegetarian</span></div>
           </div>
-          <p>Coca-Cola products (various flavors)</p>
-        </div>
-        <div class="menu-item">
-          <div class="item-header">
-            <h3>Bottled Water</h3>
-            <span class="price">$2</span>
+        </article>
+        <article class="menu-item reveal">
+          <div class="item-emoji">🥖</div>
+          <div>
+            <div class="item-header"><h3>Breadsticks</h3><span class="price">$6</span></div>
+            <p>Crispy breadsticks with garlic butter.</p>
+            <div class="badges"><span class="badge veg">Vegetarian</span></div>
           </div>
-          <p>Ice cold bottled water</p>
-        </div>
-        <div class="menu-item">
-          <div class="item-header">
-            <h3>Iced Tea</h3>
-            <span class="price">$2.50</span>
+        </article>
+        <article class="menu-item reveal">
+          <div class="item-emoji">🧀</div>
+          <div>
+            <div class="item-header"><h3>Mozzarella Sticks</h3><span class="price">$7</span></div>
+            <p>Golden fried mozzarella with marinara sauce.</p>
+            <div class="badges"><span class="badge veg">Vegetarian</span></div>
           </div>
-          <p>Fresh brewed iced tea</p>
-        </div>
-        <div class="menu-item">
-          <div class="item-header">
-            <h3>Lemonade</h3>
-            <span class="price">$3</span>
+        </article>
+        <article class="menu-item reveal">
+          <div class="item-emoji">🥬</div>
+          <div>
+            <div class="item-header"><h3>Spinach &amp; Cheese Dip</h3><span class="price">$8</span></div>
+            <p>Creamy spinach and cheese with bread.</p>
+            <div class="badges"><span class="badge veg">Vegetarian</span></div>
           </div>
-          <p>Homemade fresh lemonade</p>
-        </div>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
+    <section class="menu-category" id="beverages">
+      <div class="category-head reveal"><h2>Beverages</h2></div>
+      <p class="category-note">Cold, crisp and made for pizza.</p>
+      <div class="menu-items">
+        <article class="menu-item reveal">
+          <div class="item-emoji">🥤</div>
+          <div>
+            <div class="item-header"><h3>Soda</h3><span class="price">$2</span></div>
+            <p>Coca-Cola products (various flavors).</p>
+          </div>
+        </article>
+        <article class="menu-item reveal">
+          <div class="item-emoji">💧</div>
+          <div>
+            <div class="item-header"><h3>Bottled Water</h3><span class="price">$2</span></div>
+            <p>Ice cold bottled water.</p>
+          </div>
+        </article>
+        <article class="menu-item reveal">
+          <div class="item-emoji">🍵</div>
+          <div>
+            <div class="item-header"><h3>Iced Tea</h3><span class="price">$2.50</span></div>
+            <p>Fresh brewed iced tea.</p>
+          </div>
+        </article>
+        <article class="menu-item reveal">
+          <div class="item-emoji">🍋</div>
+          <div>
+            <div class="item-header"><h3>Lemonade</h3><span class="price">$3</span></div>
+            <p>Homemade fresh lemonade.</p>
+            <div class="badges"><span class="badge fav">Homemade</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="menu-footnote reveal">
+      Please tell us about any food allergies when you order. Prices subject to change.<br>
+      Ready to eat? <a href="tel:5551234567"><strong>Call (555) 123-4567</strong></a> or <a href="contact.html"><strong>stop by</strong></a>.
+    </div>
+  </main>
+
   <footer>
-    <p>&copy; 2026 Maple Street Pizza</p>
+    <div class="footer-grid">
+      <div>
+        <div class="brand">Maple Street Pizza</div>
+        <p>Wood-fired pizza and neighborhood favorites, made by hand in the heart of Maplewood.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <ul>
+          <li>Mon–Thu: 11am–10pm</li>
+          <li>Fri–Sat: 11am–11pm</li>
+          <li>Sunday: 11am–10pm</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Find us</h4>
+        <ul>
+          <li>123 Maple St, Maplewood</li>
+          <li><a href="tel:5551234567">(555) 123-4567</a></li>
+          <li><a href="mailto:info@maplestreetpizza.com">info@maplestreetpizza.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Maple Street Pizza · Made with ❤️ and a lot of cheese</div>
   </footer>
+
+  <div class="mobile-bar">
+    <a href="tel:5551234567" class="btn">📞 Call to Order</a>
+    <a href="contact.html" class="btn btn-dark">📍 Directions</a>
+  </div>
+
   <script src="js/script.js"></script>
 </body>
 </html>

@@ -3,77 +3,240 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maple Street Pizza</title>
+  <title>Maple Street Pizza | Wood-Fired Pizza in Maplewood</title>
+  <meta name="description" content="Hand-stretched, slow-fermented, wood-fired pizza in Maplewood. Dine in, take out, or call ahead for pickup.">
+  <meta property="og:title" content="Maple Street Pizza | Wood-Fired Pizza in Maplewood">
+  <meta property="og:description" content="Hand-stretched, slow-fermented, wood-fired pizza. Family-owned for over a decade.">
+  <meta property="og:image" content="images/pizza.jpg">
+  <meta name="theme-color" content="#d8381f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-  <!-- Navigation -->
+  <div class="topbar">🔥 Ovens are lit daily from 11am · <a href="tel:5551234567">Call ahead: (555) 123-4567</a></div>
+
   <nav class="navbar">
-    <a href="index.html" class="nav-logo">Maple Street Pizza</a>
-    <ul class="nav-menu">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo"><span class="leaf" aria-hidden="true">🍕</span>Maple Street</a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="tel:5551234567" class="btn">Order Pickup</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-controls="nav-menu" aria-expanded="false"><span></span></button>
+    </div>
   </nav>
 
-  <!-- Hero Section -->
   <header class="hero">
     <div class="hero-inner">
-      <h1>Maple Street Pizza</h1>
-      <p>Wood-fired pizzas & neighborhood favorites</p>
-      <div class="hero-ctas">
-        <a href="menu.html" class="btn">View Menu</a>
-        <a href="contact.html" class="btn btn-secondary">Contact / Hours</a>
+      <div class="hero-copy">
+        <div class="status-pill" data-open-status><span class="status-dot"></span><span data-open-text>Checking hours…</span></div>
+        <span class="eyebrow">Wood-fired · Family-owned · Since 2014</span>
+        <h1>Pizza worth <em>gathering</em> around.</h1>
+        <p class="hero-lead">Hand-stretched dough, slow-fermented for 48 hours and fired in a blistering oven. Big flavor, neighborhood warmth.</p>
+        <div class="hero-ctas">
+          <a href="menu.html" class="btn">Explore the Menu</a>
+          <a href="tel:5551234567" class="btn btn-secondary">Call to Order</a>
+        </div>
+        <div class="hero-meta">
+          <span>📍 <strong>123 Maple St</strong>, Maplewood</span>
+          <span>⏱ Ready in about <strong>15 min</strong></span>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- About Section -->
-  <section class="about">
+  <div class="strip">
+    <div class="strip-inner">
+      <div class="strip-item"><strong>10+</strong><span>YEARS IN MAPLEWOOD</span></div>
+      <div class="strip-item"><strong>48 hr</strong><span>DOUGH FERMENTATION</span></div>
+      <div class="strip-item"><strong>900°F</strong><span>WOOD-FIRED OVEN</span></div>
+      <div class="strip-item"><strong>4.9 ★</strong><span>NEIGHBORHOOD FAVORITE</span></div>
+    </div>
+  </div>
+
+  <section class="section">
     <div class="container">
-      <h2>Welcome to Maple Street Pizza</h2>
-      <p>For over a decade we've served hand-stretched pizzas baked to perfection. We use local produce, premium cheeses, and slow-fermented dough to deliver a memorable meal.</p>
-      <div class="highlights">
-        <div class="highlight">
+      <div class="section-head reveal">
+        <span class="eyebrow">Why you'll love it</span>
+        <h2>Simple ingredients. Serious craft.</h2>
+        <p>We keep it honest: great dough, good tomatoes, real cheese, and a lot of patience.</p>
+      </div>
+      <div class="features">
+        <article class="feature reveal">
+          <div class="icon">🍅</div>
           <h3>Fresh Ingredients</h3>
-          <p>Sourced locally when possible.</p>
-        </div>
-        <div class="highlight">
+          <p>Local produce when it's in season, premium mozzarella, and sweet crushed tomatoes with nothing to hide behind.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="icon">🌾</div>
           <h3>Handmade Dough</h3>
-          <p>Slow-fermented for great flavor and texture.</p>
-        </div>
-        <div class="highlight">
+          <p>Mixed every morning and slow-fermented two days for a light, airy, beautifully blistered crust.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="icon">🏡</div>
           <h3>Community Focused</h3>
-          <p>Family-owned and proud to serve Maplewood.</p>
-        </div>
+          <p>Family-owned and proud to feed Maplewood: team dinners, birthdays, game nights and everything between.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- CTA Section -->
-  <section class="cta-section">
+  <section class="section signature">
     <div class="container">
-      <h2>Ready to Taste the Best Pizza?</h2>
-      <p>Stop by for dine-in, takeout, or call ahead for pickup.</p>
-      <div class="cta-buttons">
-        <a href="menu.html" class="btn">View Full Menu</a>
-        <a href="contact.html" class="btn btn-secondary">Get Directions</a>
+      <div class="section-head reveal">
+        <span class="eyebrow">Fan favorites</span>
+        <h2>The pies everyone talks about</h2>
+        <p>Start with one of these and you can't go wrong.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card-art red"><span class="tag">Most ordered</span>🍕</div>
+          <div class="card-body">
+            <div class="card-top"><h3>Pepperoni</h3><span class="price">$13</span></div>
+            <p>Tomato, mozzarella and premium pepperoni that curls into crispy little cups of flavor.</p>
+            <a href="menu.html#pizzas" class="btn btn-outline btn-sm">See all pizzas</a>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-art green"><span class="tag">Classic</span>🌿</div>
+          <div class="card-body">
+            <div class="card-top"><h3>Margherita</h3><span class="price">$12</span></div>
+            <p>Bright tomato, fresh mozzarella and basil. The one that started it all.</p>
+            <a href="menu.html#pizzas" class="btn btn-outline btn-sm">See all pizzas</a>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-art gold"><span class="tag">Hearty</span>🥓</div>
+          <div class="card-body">
+            <div class="card-top"><h3>Meat Lovers</h3><span class="price">$15</span></div>
+            <p>Pepperoni, sausage, bacon and mozzarella, built for the seriously hungry.</p>
+            <a href="menu.html#pizzas" class="btn btn-outline btn-sm">See all pizzas</a>
+          </div>
+        </article>
+      </div>
+      <div class="center-cta reveal"><a href="menu.html" class="btn">View the Full Menu</a></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div class="split-media reveal">
+        <img src="images/pizza.jpg" alt="Friends sharing a fresh pepperoni pizza and ice-cold sodas" loading="lazy">
+        <div class="split-badge"><strong>2014</strong><span>FIRST OVEN LIT</span></div>
+      </div>
+      <div class="split-copy reveal">
+        <span class="eyebrow">Our story</span>
+        <h2>Made for sharing, since day one.</h2>
+        <p>Maple Street Pizza started with one oven, one family recipe and a simple idea: a table of friends, a hot pie in the middle, and nowhere else to be.</p>
+        <p>A decade later, nothing has changed except the line out the door. We still make the dough by hand, we still know most of our regulars by name, and we still believe the best meals are the ones you pass around.</p>
+        <ul class="checklist">
+          <li>Dough made fresh every morning</li>
+          <li>Local produce when it's in season</li>
+          <li>Dine-in, takeout and easy call-ahead pickup</li>
+        </ul>
+        <a href="contact.html" class="btn btn-dark">Visit Us</a>
       </div>
     </div>
   </section>
 
-  <!-- Contact CTA -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Have questions? Visit us or send us a message</p>
-    <a href="contact.html" class="btn">Go to Contact Page</a>
+  <section class="section process">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">How we make it</span>
+        <h2>From dough to doorstep in four steps</h2>
+        <p>No shortcuts. That's the whole secret.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><h3>Ferment</h3><p>Dough rests for 48 hours to build flavor and a light, chewy texture.</p></div>
+        <div class="step reveal"><h3>Stretch</h3><p>Every pie is stretched by hand. Never rolled, never rushed.</p></div>
+        <div class="step reveal"><h3>Top</h3><p>Sweet tomato, fresh cheese and toppings added to order.</p></div>
+        <div class="step reveal"><h3>Fire</h3><p>Into the wood-fired oven and out in minutes, blistered and bubbling.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sample testimonials for the demo site -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Kind words</span>
+        <h2>Loved around the neighborhood</h2>
+      </div>
+      <div class="reviews">
+        <figure class="review reveal">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>The crust is unreal: crisp outside, soft and chewy inside. Our Friday pizza night has officially moved here.</p>
+          <cite>Dana R.<span>Maplewood local</span></cite>
+        </figure>
+        <figure class="review reveal">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>Called ahead, walked in, pizza was hot and ready. The Margherita tastes like summer. Staff couldn't be nicer.</p>
+          <cite>Marcus T.<span>Weekly regular</span></cite>
+        </figure>
+        <figure class="review reveal">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>Fed a table of twelve at my daughter's birthday and every single slice disappeared. Garlic knots are a must.</p>
+          <cite>Priya S.<span>Party host</span></cite>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="container reveal">
+      <h2>Hungry? We're firing up the oven.</h2>
+      <p>Dine in, take out, or call ahead and we'll have it hot when you arrive.</p>
+      <div class="cta-buttons">
+        <a href="tel:5551234567" class="btn">Call (555) 123-4567</a>
+        <a href="contact.html" class="btn btn-secondary">Hours &amp; Directions</a>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2026 Maple Street Pizza</p>
+    <div class="footer-grid">
+      <div>
+        <div class="brand">Maple Street Pizza</div>
+        <p>Wood-fired pizza and neighborhood favorites, made by hand in the heart of Maplewood.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <ul>
+          <li>Mon–Thu: 11am–10pm</li>
+          <li>Fri–Sat: 11am–11pm</li>
+          <li>Sunday: 11am–10pm</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Find us</h4>
+        <ul>
+          <li>123 Maple St, Maplewood</li>
+          <li><a href="tel:5551234567">(555) 123-4567</a></li>
+          <li><a href="mailto:info@maplestreetpizza.com">info@maplestreetpizza.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Maple Street Pizza · Made with ❤️ and a lot of cheese</div>
   </footer>
+
+  <div class="mobile-bar">
+    <a href="tel:5551234567" class="btn">📞 Call</a>
+    <a href="menu.html" class="btn btn-dark">🍕 Menu</a>
+  </div>
+
   <script src="js/script.js"></script>
 </body>
 </html>
