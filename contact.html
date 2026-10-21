@@ -3,145 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact &amp; Hours | Maple Street Pizza</title>
-  <meta name="description" content="Find Maple Street Pizza at 123 Maple St, Maplewood. See our hours, call ahead for pickup, or send us a message.">
-  <meta name="theme-color" content="#d8381f">
+  <title>Visit &amp; Hours | Maple Street Pizza</title>
+  <meta name="description" content="Maple Street Pizza is at 123 Maple St, Maplewood. Open daily from 11am. Call ahead for pickup or send us a message.">
+  <meta name="theme-color" content="#f4eddf">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-  <div class="topbar">🔥 Ovens are lit daily from 11am · <a href="tel:5551234567">Call ahead: (555) 123-4567</a></div>
 
-  <nav class="navbar">
-    <div class="navbar-inner">
-      <a href="index.html" class="nav-logo"><span class="leaf" aria-hidden="true">🍕</span>Maple Street</a>
-      <ul class="nav-menu" id="nav-menu">
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="wordmark">Maple Street <em>Pizza</em></a>
+      <ul class="site-nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-        <li><a href="tel:5551234567" class="btn">Order Pickup</a></li>
+        <li><a href="contact.html" class="active">Visit</a></li>
+        <li><a href="tel:5551234567" class="tel">(555) 123-4567</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-controls="nav-menu" aria-expanded="false"><span></span></button>
-    </div>
-  </nav>
-
-  <header class="page-header">
-    <span class="eyebrow">Come hungry</span>
-    <h1>Visit Us</h1>
-    <p>Pull up a chair, or call ahead and we'll have your pizza hot and waiting.</p>
-    <div class="menu-actions">
-      <div class="status-pill" data-open-status><span class="status-dot"></span><span data-open-text>Checking hours…</span></div>
     </div>
   </header>
 
-  <main class="contact-page">
-    <section class="info-card reveal">
-      <h2>Get in touch</h2>
-      <div class="info-row">
-        <div class="ico">📍</div>
-        <div><strong>Address</strong>123 Maple St, Maplewood</div>
+  <main>
+    <header class="page-head">
+      <div class="wrap head-grid">
+        <h1>Come hungry. <em>Pull up a chair.</em></h1>
+        <div class="aside">
+          <p>Dine in at the counter or the tables, or call ahead and we'll have it boxed when you arrive.</p>
+        </div>
       </div>
-      <div class="info-row">
-        <div class="ico">📞</div>
-        <div><strong>Phone</strong><a href="tel:5551234567">(555) 123-4567</a></div>
+    </header>
+
+    <div class="wrap contact-grid">
+      <section class="contact-main reveal">
+        <span class="label">Address</span>
+        <address>123 Maple St<br>Maplewood</address>
+        <ul class="contact-lines">
+          <li>Phone: <a href="tel:5551234567">(555) 123-4567</a></li>
+          <li>Email: <a href="mailto:info@maplestreetpizza.com">info@maplestreetpizza.com</a></li>
+        </ul>
+      </section>
+
+      <section class="hours reveal">
+        <span class="label">Hours</span>
+        <table id="hours-table">
+          <tbody>
+            <tr data-days="1,2,3,4"><td>Monday &ndash; Thursday</td><td>11am &ndash; 10pm</td></tr>
+            <tr data-days="5,6"><td>Friday &ndash; Saturday</td><td>11am &ndash; 11pm</td></tr>
+            <tr data-days="0"><td>Sunday</td><td>11am &ndash; 10pm</td></tr>
+          </tbody>
+        </table>
+        <div class="status-line" data-status>
+          <span><span class="dot"></span><strong data-status-text>Checking hours&hellip;</strong></span>
+        </div>
+      </section>
+    </div>
+
+    <section class="form-section">
+      <div class="wrap split">
+        <div class="reveal" style="grid-column: 1 / span 4;">
+          <h2>Ask us anything.</h2>
+          <p>Catering, a big party, or a question about the menu. We read every message.</p>
+        </div>
+        <!-- Demo form: handled client-side in js/script.js. Connect to a form service to receive real messages. -->
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="full">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic">
+              <option>General question</option>
+              <option>Catering or large order</option>
+              <option>Private party</option>
+              <option>Feedback</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="full">
+            <button type="submit" class="btn">Send message</button>
+            <p class="form-success" id="form-success" role="status">Thanks. Your message is on its way and we'll reply soon.</p>
+          </div>
+        </form>
       </div>
-      <div class="info-row">
-        <div class="ico">✉️</div>
-        <div><strong>Email</strong><a href="mailto:info@maplestreetpizza.com">info@maplestreetpizza.com</a></div>
-      </div>
-      <a href="tel:5551234567" class="btn">Call to Order</a>
     </section>
 
-    <section class="info-card reveal">
-      <h2>Hours of operation</h2>
-      <ul class="hours-list" id="hours-list">
-        <li data-days="1,2,3,4"><span>Monday – Thursday</span><span>11am – 10pm</span></li>
-        <li data-days="5,6"><span>Friday – Saturday</span><span>11am – 11pm</span></li>
-        <li data-days="0"><span>Sunday</span><span>11am – 10pm</span></li>
-      </ul>
-    </section>
-
-    <section class="info-card form-card reveal">
-      <h2>Send us a message</h2>
-      <p style="color: var(--text-soft);">Catering, large parties or a question about the menu? Drop us a line.</p>
-      <!-- Demo form: handled client-side in js/script.js. Connect to a form service to receive real messages. -->
-      <form class="contact-form" id="contact-form" novalidate>
-        <div>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" autocomplete="name" required>
+    <section class="map">
+      <div class="wrap">
+        <div class="map-head">
+          <h2>Find us</h2>
+          <a class="arrow-link" href="https://www.google.com/maps/search/?api=1&query=123+Maple+St+Maplewood" target="_blank" rel="noopener">Open in Google Maps</a>
         </div>
-        <div>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" autocomplete="email" required>
-        </div>
-        <div class="full">
-          <label for="topic">What's this about?</label>
-          <select id="topic" name="topic">
-            <option>General question</option>
-            <option>Catering / large order</option>
-            <option>Private party</option>
-            <option>Feedback</option>
-          </select>
-        </div>
-        <div class="full">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <div class="full"><button type="submit" class="btn">Send Message</button></div>
-      </form>
-      <div class="form-success" id="form-success" role="status">Thanks! Your message is on its way. We'll reply soon. 🍕</div>
-    </section>
-
-    <section class="map-wrap reveal">
-      <div class="map-links">
-        <h2>Find us</h2>
-        <a class="btn btn-outline btn-sm" href="https://www.google.com/maps/search/?api=1&query=123+Maple+St+Maplewood" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <iframe title="Map showing Maple Street Pizza" src="https://www.google.com/maps?q=123+Maple+St+Maplewood&output=embed" allowfullscreen loading="lazy"></iframe>
       </div>
-      <iframe title="Map showing Maple Street Pizza" src="https://www.google.com/maps?q=123+Maple+St+Maplewood&output=embed" allowfullscreen loading="lazy"></iframe>
     </section>
   </main>
 
-  <footer>
-    <div class="footer-grid">
-      <div>
-        <div class="brand">Maple Street Pizza</div>
-        <p>Wood-fired pizza and neighborhood favorites, made by hand in the heart of Maplewood.</p>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-lead">
+        <h2>Hungry? The oven's already hot.</h2>
+        <a href="tel:5551234567" class="btn">Call (555) 123-4567</a>
       </div>
-      <div>
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Hours</h4>
-        <ul>
-          <li>Mon–Thu: 11am–10pm</li>
-          <li>Fri–Sat: 11am–11pm</li>
-          <li>Sunday: 11am–10pm</li>
-        </ul>
-      </div>
-      <div>
+      <div class="footer-col">
         <h4>Find us</h4>
         <ul>
-          <li>123 Maple St, Maplewood</li>
-          <li><a href="tel:5551234567">(555) 123-4567</a></li>
+          <li>123 Maple St</li>
+          <li>Maplewood</li>
           <li><a href="mailto:info@maplestreetpizza.com">info@maplestreetpizza.com</a></li>
         </ul>
       </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <ul>
+          <li>Mon&ndash;Thu 11am&ndash;10pm</li>
+          <li>Fri&ndash;Sat 11am&ndash;11pm</li>
+          <li>Sun 11am&ndash;10pm</li>
+        </ul>
+      </div>
     </div>
-    <div class="footer-bottom">&copy; 2026 Maple Street Pizza · Made with ❤️ and a lot of cheese</div>
+    <div class="wrap footer-base">
+      <span>&copy; 2026 Maple Street Pizza</span>
+      <span><a href="index.html">Home</a> &middot; <a href="menu.html">Menu</a></span>
+    </div>
   </footer>
-
-  <div class="mobile-bar">
-    <a href="tel:5551234567" class="btn">📞 Call</a>
-    <a href="menu.html" class="btn btn-dark">🍕 Menu</a>
-  </div>
 
   <script src="js/script.js"></script>
 </body>
